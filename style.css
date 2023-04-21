@@ -1,0 +1,478 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    body{
+    background-image: url(./J4o.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 120vh;
+    }
+    #sec1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        }
+        .logo1{
+        display: flex;
+        justify-content: space-around;
+        margin: 20px;
+        }
+        .span1{
+        font-size: 30px;
+        font-family: 'Carter One', cursive;
+        background: linear-gradient(10deg,rgb(255, 255, 255),rgb(149, 148, 148)); 
+        text-shadow: 0 0 10px rgb(0, 195, 255),0 0 40px rgb(0, 238, 255);
+        background-clip:text;
+        -webkit-text-stroke-color: transparent;
+        -webkit-text-stroke-width: calc(3em / 30);
+        color: #000000;
+        margin-left: 5px;
+        }
+        .ul1{
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin: 10px;
+        list-style: none;
+        font-family: 'Roboto', sans-serif;
+        }
+        .li1 a{
+        position: relative;
+        text-decoration: none;
+        margin: 5px;
+        font-size:19px;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        color: transparent;
+        -webkit-text-stroke: 1px black;
+        }
+        .li1 a::before{
+        content: attr(data-text);
+        position: absolute;
+        color: rgb(0, 166, 255);
+        width:0;
+        overflow: hidden;
+        transition: 2.3s;
+        border-right:15px solid var(--clr);
+        border-radius: 30%;
+        margin-right: 5px;
+        -webkit-text-stroke:  1px var(--clr);
+        }
+        .li1 a:hover::before
+        {
+        width: 100%;
+        filter: drop-shadow(0 0 10px var(--clr));
+        }
+        .dropdown_menu{
+        display: none;
+        
+        }
+        .ul1 .li1 a:hover::before .dropdown_menu{
+        display: block;
+        position: absolute;
+        background-color: rgb(11, 14, 13);
+        border-radius: 3px;
+        margin-top: 10px;
+        }
+        #sec2{
+            float: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10px;
+            padding: 10px;
+            float:left;
+            font-family: 'Libre Baskerville', serif;
+        }
+        .lonin{
+           
+            background: transparent;
+            backdrop-filter:blur(2px);
+            border: 5px solid rgb(0, 0, 0);
+            padding: 10%;
+            box-shadow: 0 0 10px  rgb(0, 170, 255),0 0 40px rgb(0, 170, 255);
+
+
+        }
+        .span2{
+            color: white;
+            font-family: 'Chivo Mono', monospace;
+            text-shadow: 0 0 10px skyblue,0 0 30px skyblue;
+          
+        }
+        .text1{
+            font-size: large;
+            color: rgb(39, 208, 255);
+            text-shadow: 0 0 10px white;
+           
+
+        }
+     .text2{
+        font-family: 'Nova Oval', cursive;
+  
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 10px rgb(0, 0, 0),0 0 40px rgb(1, 179, 255),0 0 60px skyblue;
+     }
+     .submit{
+        padding: 5px;
+   
+        background-color: aqua;
+        font-family: 'Libre Baskerville', serif;
+        border:1px solid rgb(255, 76, 76);
+        border-radius: 20%;
+     }
+     .submit:hover{
+        padding: 5px;
+        background-color: rgb(240, 240, 240);
+        font-family: 'Libre Baskerville', serif;
+        border:2px solid  rgb(0, 204, 255);
+        box-shadow: 0 0  10px skyblue, 0 0 30px skyblue;
+        transition: 0.5s;
+
+
+     }
+     .title .box1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: right;
+        width: 20px;
+        height: 20px;
+        background: skyblue;
+        box-shadow: 0 0 10px rgb(0, 0, 0);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        animation-name: box1;
+        animation:box1 21s linear infinite;
+      
+        
+            }
+@keyframes box1
+{
+0%{
+ top: 0px; 
+ left: 0px;
+ background: skyblue;
+}
+25%{
+    top: 0%; 
+    left: 100%;
+    background:  skyblue;
+   }
+   50%{
+    top: 100%; 
+    left: 100%;
+    background:  skyblue;
+   }
+
+   75%{
+    top: 100%; 
+    left: 0px;
+    background: skyblue;
+   }
+   100%{
+    top: 0px; 
+    left: 0px;
+    background:  skyblue;
+   }
+}
+.title .box2{
+    display: flex;
+    align-items: center;
+    float: right;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background:  skyblue;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation-name: box2;
+    animation:box2 21s linear infinite;
+    
+        }
+@keyframes box2
+{
+0%{
+top: 0%; 
+left: 100%;
+background:  skyblue;
+}
+25%{
+top: 0%; 
+left: 0%;
+background:  skyblue;
+}
+50%{
+top: 100%; 
+left: 0%;
+background:  skyblue;
+}
+
+75%{
+top: 100%; 
+left: 100%;
+background:  skyblue;
+}
+100%{
+top: 0%; 
+left: 100%;
+background:  skyblue;
+}
+}
+.title .box3{
+    display: flex;
+    align-items: center;
+    float: right;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background:  skyblue;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation-name: box3;
+    animation:box3 21s linear infinite;
+    
+        }
+@keyframes box3
+{
+0%{
+top: 100%; 
+left: 100%;
+background:  skyblue;
+}
+25%{
+top: 100%; 
+left: 0%;
+background:  skyblue;
+}
+50%{
+top: 0%; 
+left: 0%;
+background:  skyblue;
+}
+
+75%{
+top: 0%; 
+left: 100%;
+background:  skyblue;
+}
+100%{
+top: 100%; 
+left: 100%;
+background:  skyblue;
+}
+}
+.title .box4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    width: 20px;
+    height: 20px;
+    background:  skyblue;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation-name: box4;
+    animation:box4 21s linear infinite;
+    
+        }
+@keyframes box4{ 
+0%{
+top: 100%; 
+left: 0%;
+background:  skyblue;
+}
+25%{
+top: 100%; 
+left: 100%;
+background:  skyblue;
+}
+50%{
+top: 0%; 
+left: 100%;
+background:  skyblue;
+}
+
+75%{
+top: 0%; 
+left: 0%;
+background:  skyblue;
+}
+100%{
+top: 100%; 
+left: 0%;
+background:  skyblue;
+}
+}
+#sec4{
+display: flex;
+margin-right: 40px;
+font-family: 'Bitter', serif;
+float:right;
+
+
+}
+.img2{
+    display: block;
+position: relative;
+margin: auto;
+border: 2px solid white;
+
+}
+.img2:hover{
+    box-shadow: 0 0 20px blue,0 0 40px blue;
+
+
+}
+.content1{
+    height: 100%;
+    margin: 5px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+
+}
+.content1:hover{
+opacity: 1;
+
+}
+.span3{
+color: rgb(255, 247, 0);
+text-shadow: 0 0 10px rgb(0, 0, 0);
+}
+.span4{
+color: aliceblue;
+text-shadow: 0 0 10px rgb(0, 0, 0);
+
+}
+#sec5{
+    display: flex;
+    margin-left: 40%;
+    font-family: 'Bitter', serif;
+    }
+    .img3{
+        display: block;
+    position: relative;
+    margin: auto;
+    border: 2px solid white;
+    
+    }
+    .img3:hover{
+        box-shadow: 0 0 20px blue,0 0 40px blue;
+
+
+    }
+    .content2{
+        height: 100%;
+        margin: 5px;
+        padding: 40px;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background: rgba(0,0,0,0.6);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        opacity: 0;
+        transition: 0.6s;
+    
+    }
+    .content2:hover{
+    opacity: 1;
+    padding: 40px;
+    text-shadow: 0 0 10px blue;
+    
+    }
+    .hobbieslogo{
+        color: rgb(0, 255, 242);
+        text-shadow: 0 0 30px rgb(51, 0, 255);
+        margin-left: 30px;
+
+    }
+.myinfologo{
+    color: rgb(0, 255, 242);
+    text-shadow: 0 0 30px rgb(51, 0, 255);
+    margin-left: 30px;
+
+
+}
+#sec6{
+    display: flex;
+    margin-left: 60%;
+    font-family: 'Bitter', serif;
+    }
+    .img4{
+        display: block;
+    position: relative;
+    margin: auto;
+    border: 2px solid white;
+    
+    }
+    .img4:hover{
+        box-shadow: 0 0 20px blue,0 0 40px blue;
+
+
+    }
+    .content3{
+        height: 100%;
+        margin: 5px;
+        padding: 30px;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background: rgba(0,0,0,0.6);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        opacity: 0;
+        transition: 0.6s;
+    
+    }
+    .content3:hover{
+    opacity: 1;
+    padding: 20px;
+    text-shadow: 0 0 10px blue;
+    
+    }
+    .educationlogo{
+        color: rgb(0, 255, 242);
+        text-shadow: 0 0 30px rgb(51, 0, 255);
+        margin-left: 30px;
+
+    }
+.educationlogo{
+    color: rgb(0, 255, 242);
+    text-shadow: 0 0 30px rgb(51, 0, 255);
+    margin-left: 30px;
+
+
+}
+@media only screen and (min-device-width: 480px)
+{
+body{
+height: max-content;
+width: 100%;
+
+}
+}
